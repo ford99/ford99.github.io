@@ -1,0 +1,71 @@
+/*Split the screen in half*/
+.split{
+	height:100%;
+	width:50%;
+	position:fixed;
+	z-index:1;
+	top:0;
+	overflow-x:hidden;
+	padding-top:20px;
+}
+
+/*Control the left side*/
+.left{
+	left:0;
+	background-color:beige;
+}
+
+/*Control the right side*/
+.right{
+	right:0;
+	background-color:#33FFC9;
+}
+
+/*If you want the content centered horizontally and vertically*/
+
+
+/*Style the image inside the centered container if needed */
+
+
+
+/*on screens that are 850px or less - background colour will be pink */
+@media(max-width:850px){
+	body{
+		background-color:pink;
+	}
+}
+/*on screens that are 851px or more - background colour will be blue */
+@media(min-width:851px){
+	body{
+		background-color:beige;
+	}
+}
+
+.container-1{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	
+}
+
+.container-1 div{
+	background-color:yellow;
+	flex:1;
+	border: 3px solid;
+}
+
+h1{
+	color:red;
+	font-family:Helvetica;
+	
+}
+h2{
+	color:blue;
+	font-family:Times New Roman;
+	text-shadow:3px 3px #FF9999;
+}
+h3{
+	color:purple;
+	font-family:Courier;
+	text-shadow:1px 1px #FF1111;
+}
