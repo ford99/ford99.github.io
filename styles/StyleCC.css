@@ -15,6 +15,22 @@
 	background-color:beige;
 }
 
+.centered1{
+	text-align:center;
+}
+
+.carousel-item img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.link{
+	text-align:center;
+}
+	
+
 /*Control the right side*/
 .right{
 	right:0;
@@ -26,19 +42,20 @@
 
 /*Style the image inside the centered container if needed */
 
+/*If the browser window is 1000px or smaller on the left half of the screen the background colour will be pink */
 
-
-/*on screens that are 850px or less - background colour will be pink */
-@media(max-width:850px){
-	body{
-		background-color:pink;
-	}
+@media only screen and (max-width: 1000px) {
+  .split.left {
+    background-color: #FFB6C1;
+  }
 }
-/*on screens that are 851px or more - background colour will be blue */
-@media(min-width:851px){
-	body{
-		background-color:beige;
-	}
+
+/*If the browser window is 1000px or smaller on the right half of the screen the background colour will be blue */
+
+@media only screen and (max-width: 1000px) {
+  .split.right {
+    background-color: #ADD8E6;
+  }
 }
 
 .container-1{
