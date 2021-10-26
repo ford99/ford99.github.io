@@ -9,14 +9,20 @@
 	padding-top:20px;
 }
 
+.show{
+	text-align:center;
+	justify-content:center;
+}
+
+.row{
+	display:flex;
+	justify-content:space-between;
+}
+
 /*Control the left side*/
 .left{
 	left:0;
 	background-color:beige;
-}
-
-.centered1{
-	text-align:center;
 }
 
 .carousel-item img {
@@ -26,9 +32,15 @@
     object-position: 50% 50%;
 }
 
-.link{
-	text-align:center;
+
+/*If the browser window is 1000px or smaller on the left half of the screen the background colour will be pink */
+
+@media only screen and (max-width: 1000px) {
+  .left {
+    background-color: #FFB6C1;
+  }
 }
+
 	
 
 /*Control the right side*/
@@ -42,47 +54,35 @@
 
 /*Style the image inside the centered container if needed */
 
-/*If the browser window is 1000px or smaller on the left half of the screen the background colour will be pink */
 
-@media only screen and (max-width: 1000px) {
-  .split.left {
-    background-color: #FFB6C1;
-  }
-}
 
 /*If the browser window is 1000px or smaller on the right half of the screen the background colour will be blue */
 
 @media only screen and (max-width: 1000px) {
-  .split.right {
+  .right {
     background-color: #ADD8E6;
   }
 }
 
-.container-1{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
-	
-}
-
-.container-1 div{
-	background-color:yellow;
-	flex:1;
-	border: 3px solid;
+.col-md-3{
+	background-color:#FFFFE0;
 }
 
 h1{
 	color:red;
+	font-size:25px;
 	font-family:Helvetica;
 	
 }
 h2{
 	color:blue;
+	font-size:20px;
 	font-family:Times New Roman;
-	text-shadow:3px 3px #FF9999;
+	text-shadow:1px 1px #FF9999;
 }
 h3{
 	color:purple;
+	font-size:15px;
 	font-family:Courier;
 	text-shadow:1px 1px #FF1111;
 }
